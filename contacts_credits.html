@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Breá Liom Gaeilge</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Milonga', serif;
+            background-color: #0F1312;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        body {
+            flex: 1;
+            justify-content: center; 
+            align-items: center; 
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(15, 19, 18, 0.7);
+            z-index: 1000;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.5em;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 80%;
+            margin-top: 5px;
+            min-height: 70vh;
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 5px;
+        }
+
+        .text-container {
+            padding-left: 20px;
+        }
+
+        .title {
+            font-family: 'Milonga', serif;
+            font-size: 7em;
+            margin-bottom: 10px;
+            color: #00F4BA;
+        }
+
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .video-container {
+            width: 100%;
+        }
+
+        .video-container iframe {
+            width: 15cm;
+            height: auto;
+            max-width: 100%;
+        }
+
+        footer {
+            position: relative; /* Keep the footer relative to its container */
+            bottom: 0; /* Stick to the bottom */
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(15, 19, 18, 0.5);
+            color: rgb(255, 255, 255);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="homepage.html">Is Breá Liom Gaeilge</a></h1>
+        <div class="subtitle">Collection Of Lovely Irish Words</div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <div class="text-container">
+                <p>Email: <a href="mailto:yelenakarp@gmail.com">yelenakarp@gmail.com</a></p>
+                <p>Phone: +353 085 735 5526</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Credits</h2>
+            <div class="text-container">
+                <p>Icons made by me 😌</p>
+                <p>Images from Duolingo, Foclach and KNEECAP's youtube</p>
+                <p>Fonts from <a href="https://fonts.google.com/" title="Google Fonts">Google Fonts</a></p>
+                <p>Pronunciation and meaning of words from <a href="https://www.focloir.ie/" title="Focloir.Ie">Focloir.Ie</a></p>
+            </div>
+        </section>
+
+        <section class="video-container">
+            <iframe src="https://www.youtube.com/embed/QG71CCEzrUM?si=fjJr2gSW9_0cgagM" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Is Breá Liom Gaeilge. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Is Breá Liom Gaeilge</title>
+
+    <!-- Google Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS styles -->
+    <style>
+        /* General styles for body */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #0F1312;
+            color: #ffffff;
+            font-family: 'Milonga', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(15, 19, 18, 0.9);
+            z-index: 1000;
+        }
+
+        /* Main title styles */
+        h1 {
+            margin: 20px;
+            font-size: 4em;
+        }
+
+        /* Subtitle styles */
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Main section styles */
+        section {
+            text-align: left;
+            padding: 100px;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            flex-grow: 1;
+        }
+
+        /* Styles for tiles container */
+        .tiles-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 100px;
+            flex-wrap: wrap;
+        }
+
+        /* Individual tile styles */
+        .tile {
+            width: 29%;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            backdrop-filter: blur(20px);
+        }
+
+        /* Tile hover effect */
+        .tile:hover {
+            background-color: #3B7568
+        }
+
+        /* Image inside the tile */
+        .tile img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        /* Styles for small tile container */
+        .small-tile-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: left;
+            margin-top: 150px;
+            margin-bottom: 100px;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        /* Individual small tile styles */
+        .small-tile {
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Small tile hover effect */
+        .small-tile:hover {
+            background-color: #35A087
+        }
+
+        /* Image inside the small tile */
+        .small-tile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 0px;
+            background-color: rgba(15, 19, 18, 0.5);
+            color: rgb(255, 255, 255);
+        }
+
+        /* Divider between sections */
+        .divider {
+            margin-top: 150px;
+            margin-bottom: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block; 
+            width: 5cm;
+            border-top: 0.5px solid white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header section -->
+    <header>
+        <h1>Is Breá Liom Gaeilge</h1>
+        <div class="subtitle">Collection Of Lovely Irish Words</div>
+    </header>
+
+    <!-- Main content section -->
+    <section>
+        <!-- Small tiles container -->
+        <div class="small-tile-container">
+            <!-- Small tile links to various pages -->
+            <a class="small-tile" href="river.html">
+                <img src="river.png" alt="river">
+            </a>
+            <a class="small-tile" href="computer.html">
+                <img src="computer.png" alt="computer">
+            </a>
+            <a class="small-tile" href="music.html">
+                <img src="music.png" alt="music">
+            </a>
+            <a class="small-tile" href="number.html">
+                <img src="number.png" alt="number">
+            </a>
+            <a class="small-tile" href="book.html">
+                <img src="book.png" alt="book">
+            </a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="tiles-container">
+            <div class="tile" onclick="window.open('https://www.duolingo.com/learn', '_blank')">
+                <div class="tile-content">
+                    <img src="lesson.png" alt="Lessons Image">
+                    <h3>Do a Lesson</h3>
+                    <p>Start with the basics or challenge yourself with advanced exercises from Duolingo.</p>
+                </div>
+            </div>
+
+            <div class="tile" onclick="window.open('https://www.foclach.com/', '_blank')">
+                <div class="tile-content">
+                    <img src="game.png" alt="Game Image">
+                    <h3>Play a Game</h3>
+                    <p>Try Foclach - an Irish version of a viral puzzle game, to remember your vocab.</p>
+                </div>
+            </div>
+
+            <div class="tile" onclick="window.open('https://www.youtube.com/watch?v=KSnF7RaeoXE&ab_channel=KNEECAP', '_blank')">
+                <div class="tile-content">
+                    <img src="song.png" alt="Music Image">
+                    <h3>Listen to Music</h3>
+                    <p>Check out a recent KNEECAP's hip hop release merging Irish with English.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="contacts_credits.html" style="color: white; font-size: larger; text-decoration: underline;">Contacts and Credits</a>
+        <script>
+            let counter = 0;
+            if (localStorage.getItem('hitCount')) {
+                counter = parseInt(localStorage.getItem('hitCount'));
+            }
+            counter++;
+            localStorage.setItem('hitCount', counter);
+    
+            let footerText = '&copy; 2024 Is Breá Liom Gaeilge. All rights reserved. Visitor count: ' + counter;
+    
+            document.write('<p style="font-family: Montserrat, sans-serif; opacity: 0.7;">' + footerText + '</p>');
+        </script>
+    </footer>
+     
+
+</body>
+
+</html>

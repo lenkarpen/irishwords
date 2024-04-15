@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Breá Liom Gaeilge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #0F1312;
+            background-size: cover;
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Milonga', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+            margin-left: 40px;
+            background-color: rgba(15, 19, 18, 0.7);
+            z-index: 1000; 
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        h1 a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.5em;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        section {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            padding: 50px;
+            margin-top: 40px;
+            color: #FFFFFF;
+            font-family: 'Montserrat', sans-serif;
+            flex-grow: 1;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+            background-color: #22CAA3; 
+            border-radius: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .text-container {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .title {
+            font-family: 'Milonga', serif;
+            font-size: 7em;
+            margin-bottom: 10px;
+            color: #00F4BA;
+        }
+
+        .text-paragraph {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0px;
+            background-color: rgba(15, 19, 18, 0.5);
+            color: rgb(255, 255, 255);
+        }
+        .parameter {
+            font-style: italic;
+            font-size: 0.8em;
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="homepage.html">Is Breá Liom Gaeilge</a></h1>
+        <div class="subtitle">Collection Of Lovely Irish Words</div>
+    </header>
+
+    <section>
+        <div class="image-container">
+            <img src="number.png" alt="number">
+        </div>
+        <div class="text-container">
+            <div class="title">Uimhir</div>
+            <p class="parameter">Pronunciation</p>
+            <p class="text-paragraph">[IV-ir]</p>
+
+            <p class="parameter">Meaning</p>
+            <p class="text-paragraph">Number</p>
+
+            <p class="parameter">Example</p>
+            <p class="text-paragraph">Is maith liom an uimhir a seacht.</p>
+            <p class="text-paragraph">(I like the number seven.)</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Is Breá Liom Gaeilge. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
